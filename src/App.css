@@ -1,0 +1,112 @@
+/* General root styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9; /* Subtle background color */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  font-family: Arial, sans-serif; /* Default font for consistency */
+}
+
+/* Header styling */
+header {
+  background-color: #646cff;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  margin: 0.5rem 0;
+}
+.sidebar ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 200ms ease;
+}
+.sidebar ul li a:hover {
+  color: #646cff;
+}
+
+/* Main layout styling */
+.main {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.content {
+  flex: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Post card styling */
+.card {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+.card p {
+  margin: 0;
+  color: #666;
+}
+
+/* Footer styling */
+footer {
+  background-color: #646cff;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+}
+footer .read-the-docs {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
